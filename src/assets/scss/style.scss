@@ -1,3 +1,4 @@
+@import 'vendor/reset';
 @import 'vars';
 
 html {
@@ -13,3 +14,9 @@ body {
   font-size: 1.4rem;
   color: $white;
 }
+
+
+/* Blocks */ 
+@import 'blocks/header';
+@import 'blocks/sidebar';
+@import 'blocks/main';
