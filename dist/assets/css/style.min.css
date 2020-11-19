@@ -335,6 +335,8 @@ body {
 
 /* Blocks */
 .header {
+  width: calc(100% - 300px);
+  background-color: #444;
   position: fixed;
   top: 0;
   right: 0;
@@ -350,4 +352,11 @@ body {
   z-index: 1000; }
 
 .main {
+  padding-top: 10rem;
   padding-left: 300px; }
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding-left: 5rem;
+  padding-right: 5rem; }
