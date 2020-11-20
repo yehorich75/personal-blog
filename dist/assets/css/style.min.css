@@ -333,7 +333,15 @@ body {
   font-size: 1.4rem;
   color: #fff; }
 
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
 /* Blocks */
+.page {
+  overflow: hidden; }
+
 .header {
   width: calc(100% - 300px);
   background-color: #444;
@@ -345,11 +353,19 @@ body {
 .sidebar {
   width: 300px;
   height: 100vh;
-  background-color: #ccc;
+  background-color: #202020;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000; }
+  .sidebar__header {
+    height: 180px;
+    background-color: #121212; }
+    .sidebar__header img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
 
 .main {
   padding-top: 10rem;
