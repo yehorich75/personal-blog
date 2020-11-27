@@ -12,6 +12,7 @@ const uglify = require("gulp-uglify");
 const plumber = require("gulp-plumber");
 const panini = require("panini");
 const imagemin = require("gulp-imagemin");
+// const optipng = require("gulp-optipng");
 const del = require("del");
 const notify = require("gulp-notify");
 const webpack = require('webpack');
@@ -149,22 +150,22 @@ function js(cb) {
             }
         }))
         .pipe(webpackStream({
-          mode: "production",
-          output: {
-            filename: 'app.js',
-          },
-          module: {
+            mode: "production",
+            output: {
+                filename: 'app.js',
+            },
+            module: {
             rules: [
-              {
+                {
                 test: /\.(js)$/,
                 exclude: /(node_modules)/,
                 loader: 'babel-loader',
                 query: {
-                  presets: ['@babel/preset-env']
+                    presets: ['@babel/preset-env']
                 }
-              }
+                }
             ]
-          }
+            }
         }))
         .pipe(dest(path.build.js))
         .pipe(browserSync.reload({stream: true}));
@@ -184,10 +185,10 @@ function jsWatch(cb) {
             }
         }))
         .pipe(webpackStream({
-          mode: "development",
-          output: {
-            filename: 'app.js',
-          }
+            mode: "development",
+            output: {
+                filename: 'app.js',
+            }
         }))
         .pipe(dest(path.build.js))
         .pipe(browserSync.reload({stream: true}));
@@ -200,7 +201,7 @@ function images(cb) {
         .pipe(imagemin([
             imagemin.gifsicle({interlaced: true}),
             imagemin.mozjpeg({quality: 95, progressive: true}),
-            imagemin.optipng({optimizationLevel: 5}),
+            // imagemin.optipng({optimizationLevel: 5}),
             imagemin.svgo({
                 plugins: [
                     { removeViewBox: true },

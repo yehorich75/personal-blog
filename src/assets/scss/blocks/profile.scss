@@ -1,0 +1,38 @@
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__avatar {
+        display: block;
+        position: relative;
+        
+        width: 10rem;
+        height: 10rem;
+        margin-bottom: 2rem;
+
+        border: 2px solid $white;
+        box-shadow: 0 7px 20px rgba(#000000, .25);
+        border-radius: 50%;
+    }
+    &__name {
+        font-size: 1.8rem;
+    }
+    &__prof {
+        margin-bottom: 2rem;
+
+        font-size: 1.4rem;
+        font-weight: 300;
+        color: #dedede;
+    }
+    &__text {
+        padding: 3rem 0;
+        margin: 3rem 2rem;
+
+        text-align: center;
+        font-size: 1.2rem;
+        
+        border-top: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+    }
+}
