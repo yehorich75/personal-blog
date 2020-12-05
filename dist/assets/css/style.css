@@ -658,6 +658,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 195px;
     grid-column-gap: 15px;
+    margin-bottom: 3rem;
 }
 
 .stories__item {
@@ -723,4 +724,112 @@ body {
 .stories__date {
     bottom: 1rem;
     right: 1.4rem;
+}
+
+.add-post {
+    padding: 1.5rem 2rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.45);
+    background-color: #121212;
+    border-radius: 5px;
+}
+
+.add-post__form {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.add-post__form-actions {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 18%;
+}
+
+.add-post__textarea {
+    display: block;
+    width: 82%;
+    height: 26px;
+    font-size: 1.5rem;
+    color: #fff;
+    font-family: inherit;
+    border: none;
+    background: transparent;
+    resize: none;
+}
+
+.add-post__textarea::-webkit-input-placeholder {
+    color: #d2d2d2;
+}
+
+.add-post__textarea::-moz-placeholder {
+    color: #d2d2d2;
+}
+
+.add-post__textarea:-ms-input-placeholder {
+    color: #d2d2d2;
+}
+
+.add-post__textarea::-ms-input-placeholder {
+    color: #d2d2d2;
+}
+
+.add-post__textarea::placeholder {
+    color: #d2d2d2;
+}
+
+.add-post__file, .add-post__send {
+    display: block;
+    width: 4.4rem;
+    height: 4.4rem;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: background-color .2s linear;
+}
+
+.add-post__file {
+    background: #EBEBEB url(../images/textarea/add-photo.svg) no-repeat center;
+}
+
+.add-post__file input {
+    display: none;
+}
+
+.add-post__file:hover {
+    background-color: #c5c5c5;
+}
+
+.add-post__send {
+    background: #3137C9;
+}
+
+.add-post__send:hover {
+    background-color: #2c31b4;
+}
+
+.post {
+    background-color: #202020;
+    box-shadow: 0px 15px 25px black;
+    padding: 2.5rem;
+    margin-bottom: 3rem;
+    border-radius: 0.5rem;
+}
+
+.post__content {
+    margin-bottom: 2rem;
+}
+
+.post__text {
+    font-size: 1.4rem;
+    color: #d2d2d2;
+}
+
+.post__data {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    color: #828282;
 }
