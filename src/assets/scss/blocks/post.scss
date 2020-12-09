@@ -9,6 +9,12 @@
 
     &__header {
         margin: -2.5rem -2.5rem 2.5rem;
+        &-video {
+            margin-bottom: 2.5rem;
+            iframe {
+                border-radius: 0.5rem;
+            }            
+        }
     }
 
     &__content {                
