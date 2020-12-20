@@ -17,21 +17,29 @@
     // }
 
     &__link {
+        display: block;
+        width: 40px;
+        height: 40px;
+
         color: $white;
         text-decoration: none;
+        text-align: center;
+        line-height: 4rem;
 
         background-color: #0d0d0d;
         border-radius: 0.5rem;
+        box-shadow: 0 0 10px rgba($black, .15);
 
         margin: 0 0.5rem;
-        padding: 1.2rem 1.6rem;
+        // padding: 1.2rem 1.6rem;
         transition: background-color .2s ease-in-out;
         &:hover {
-            background-color: #104BE3;
+            background-color: lighten(#0d0d0d, 5%) ;
         }
 
-        &-active {
+        &.active {
             background-color: #104BE3;
+            box-shadow: 0 0 10px rgba($blue, .15);
         }
     }
 }
