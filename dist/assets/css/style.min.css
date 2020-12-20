@@ -650,6 +650,8 @@ body {
         opacity: 1; }
     .post__actions--icon {
       margin-left: 0.7rem; }
+  .post__img {
+    margin-bottom: 2.5rem; }
   .post__preview {
     display: block;
     min-width: 100%;
